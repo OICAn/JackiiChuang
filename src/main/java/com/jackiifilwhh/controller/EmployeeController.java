@@ -38,13 +38,9 @@ public class EmployeeController {
         PageInfo pageInfo = new PageInfo(list, pageNums);
         return Msg.succeed().add("pageInfo", pageInfo);
     }
-    @RequestMapping(path = "/success")
-    public String success(@RequestParam(value = "pn", defaultValue = "1")Integer pn, Model model){
-        PageHelper.startPage(pn,pageNums);
-        List<Employee> list = employeeService.findAllEmployee();
-        PageInfo pageInfo = new PageInfo(list, pageNums);
-        model.addAttribute("pageInfo",pageInfo);
-        return "success";
+    @RequestMapping(path = "/main")
+    public String success(){
+        return "main";
     }
 
     /**
