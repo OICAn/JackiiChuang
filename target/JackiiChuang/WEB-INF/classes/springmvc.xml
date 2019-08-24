@@ -24,9 +24,9 @@
     <bean id="customExceptionResolver" class="com.jackiifilwhh.exception.CustomExceptionResolver"></bean>
 
     <!--过滤静态资源-->
-    <mvc:resources location="static/bootstrap-3.3.7-dist" mapping="static/bootstrap-3.3.7-dist/**" />
+    <mvc:resources location="static/bootstrap-3.3.7-dist/" mapping="static/bootstrap-3.3.7-dist/**" />
     <mvc:resources location="static/img/" mapping="static/img/**" />
-    <mvc:resources location="static/js" mapping="static/js**" />
+    <mvc:resources location="static/js/" mapping="static/js/**" />
 
     <!--<mvc:default-servlet-handler/>-->
     <!--开启SpringMVC注解的支持-->
